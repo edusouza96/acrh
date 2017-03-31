@@ -1,0 +1,26 @@
+//atribuir id para a tabela dados e grupos
+DELIMITER $$
+ 
+CREATE TRIGGER atribuir_id AFTER INSERT
+ON infousuario
+FOR EACH ROW
+BEGIN
+    insert into dados (id_dados) values (new.id_usuario);
+    insert into grupos (id_grupos) values (new.id_usuario);
+END$$
+ 
+DELIMITER ;
+
+//bloquea acessos
+DELIMITER $$
+ 
+CREATE TRIGGER bloquear AFTER UPDATE
+ON infousuario
+FOR EACH ROW
+BEGIN
+    if new.demissao != null then
+    UPDATE dados set bloqueado=1 where id_dados=new.id_usuario;
+    end if;
+END$$
+ 
+DELIMITER ;

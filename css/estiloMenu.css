@@ -1,0 +1,37 @@
+	.menus{
+		margin-left:0;
+		margin-top:0;
+		height:50px;
+		
+	}
+	
+	ul li {
+		display:inline;
+		text-decoration:none;
+		margin-right:5px;
+		font-size:18px;
+		border-radius:10px;
+		background:rgb(0,0,139);
+		color: #fff;
+	}
+	
+	
+	ul li a{
+		display:inline;
+		text-decoration:none;
+		font-size:18px;
+		padding:3px 10px;
+		border-radius:10px;
+		background:rgb(0,0,139);
+		color: #fff;
+	}
+	
+	ul li a:hover{
+		display:inline;
+		text-decoration:none;
+		font-size:18px;
+		padding:3px 10px;
+		border-radius:10px;
+		background:rgb(0,0,255);
+		color: #fff;
+	}

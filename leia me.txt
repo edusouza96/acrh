@@ -1,0 +1,13 @@
+admin/listaUsuarios.php
+Geral/listaUsuarios.php
+Geral/listaEmail.php
+Geral/listaGrupo.php
+Geral/cadastroInfo.php
+Geral/alterarInfo.php
+Geral/menu.php
+model/dados.php
+model/infousuario.php
+controller/valida.php
+GerarPDF.php
+inserir model/ocomon.php
+adicionar codVendedor na tabela
